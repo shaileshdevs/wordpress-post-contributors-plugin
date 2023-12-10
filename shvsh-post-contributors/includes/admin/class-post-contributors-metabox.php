@@ -45,8 +45,6 @@ if ( ! class_exists( 'Shvsh_Post_Contributors\Admin\Post_Contributors_Metabox' )
 		/**
 		 * To add meta boxes.
 		 *
-		 * @param string $post_type The current post type.
-		 *
 		 * @return void
 		 */
 		public function register_post_contributors_meta_box() {
