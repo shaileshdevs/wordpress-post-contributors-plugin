@@ -155,7 +155,14 @@ if ( ! class_exists( 'Shvsh_Post_Contributors\Admin\Post_Contributors_Metabox' )
 				$has_access = empty( array_intersect( $allowed_roles, $user->roles ) ) ? false : true;
 			}
 
-			$has_access = apply_filters( 'shvsh_has_post_contributors_configuration_access', $has_access, $post_id );
+			/**
+			 * This filter can be used to change who can have the access to configure the post contributors.
+			 *
+			 * @param bool $has_access True if user has access, false otherwise.
+			 * @param int $user_id User Id.
+			 * @param int $post_id Post Id.
+			 */
+			$has_access = apply_filters( 'shvsh_has_post_contributors_configuration_access', $has_access, $user_id, $post_id );
 
 			return $has_access;
 		}
