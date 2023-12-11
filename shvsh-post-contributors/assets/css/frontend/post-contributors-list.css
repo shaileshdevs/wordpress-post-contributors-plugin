@@ -1,0 +1,54 @@
+.rtcamp-post-contributors-list-section {
+    border: dashed 1px;
+    border-left: none;
+    border-right: none;
+    margin:auto;
+    position: relative;
+    width: 80%;
+}
+
+.rtcamp-post-contributors-list-section .section-label-wrapper {
+    position: absolute;
+    text-align: center;
+    top: -14px;
+    width: 100%;
+}
+
+.rtcamp-post-contributors-list-section .section-label {
+    background-color: white;
+    display: inline-block;
+    margin: 0;
+    padding: 2px 4px;
+}
+
+.rtcamp-post-contributors-list-section .post-contributors-list-wrapper {
+    margin: 1em;
+}
+
+.rtcamp-post-contributors-list-section .post-contributors-list {
+    margin: 2em 0;
+}
+
+.rtcamp-post-contributors-list-section .post-contributors-list-wrapper table, .rtcamp-post-contributors-list-section .post-contributors-list-wrapper tr, .rtcamp-post-contributors-list-section .post-contributors-list-wrapper td {
+    border: none;
+}
+
+.rtcamp-post-contributors-list-section .post-contributors-list td {
+    margin: 1em;
+}
+
+.rtcamp-post-contributors-list-section .post-contributor-details .gravatar-wrapper {
+    text-align: right;
+}
+
+.rtcamp-post-contributors-list-section .post-contributor-details .gravatar-wrapper img {
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0.5em;
+    max-height: 96px;
+    max-width: 96px;
+}
+
+.rtcamp-post-contributors-list-section .post-contributor-details .display-name-wrapper {
+    vertical-align: middle;
+}
