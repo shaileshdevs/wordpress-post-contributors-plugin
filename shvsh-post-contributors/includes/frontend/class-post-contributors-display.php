@@ -50,7 +50,7 @@ if ( ! class_exists( 'Shvsh_Post_Contributors\Post_Contributors_Display' ) ) {
 		 * @return string Return the HTML to display post contributors.
 		 */
 		public function display_post_contributors( $content ) {
-			if ( is_singular() && in_the_loop() && is_main_query() ) { // shvsh is in_the_loop required
+			if ( is_singular() && in_the_loop() && is_main_query() ) {
 				global $post;
 				$post_contributors     = new Post_Contributors();
 				$post_contributors_ids = $post_contributors->get_post_contributors( $post->ID );
