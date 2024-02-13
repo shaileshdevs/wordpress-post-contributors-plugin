@@ -9,7 +9,7 @@
  *
  * Plugin Name:       Post Contributors
  * Plugin URI:
- * Description:       This WordPress plugin enables you to show multiple selected post contributors on single post page.
+ * Description:
  * Version:           1.1.0
  * Requires at least: 5.2
  * Requires PHP:      7.2
@@ -31,9 +31,9 @@ if ( ! defined( 'SHVSH_POST_CONTRIBUTORS_PLUGIN_FILE' ) ) {
 // Include the main Post Contributors class.
 if ( ! class_exists( 'Shvsh_Post_Contributors\Init', false ) ) {
 	require_once dirname( SHVSH_POST_CONTRIBUTORS_PLUGIN_FILE ) . '/includes/class-init.php';
-	$init = new Shvsh_Post_Contributors\Init();
+	$shvsh_init = new Shvsh_Post_Contributors\Init();
 }
 
-register_activation_hook( SHVSH_POST_CONTRIBUTORS_PLUGIN_FILE, array( $init, 'activate_plugin' ) );
+register_activation_hook( SHVSH_POST_CONTRIBUTORS_PLUGIN_FILE, array( $shvsh_init, 'activate_plugin' ) );
 
-register_deactivation_hook( SHVSH_POST_CONTRIBUTORS_PLUGIN_FILE, array( $init, 'deactivate_plugin' ) );
+register_deactivation_hook( SHVSH_POST_CONTRIBUTORS_PLUGIN_FILE, array( $shvsh_init, 'deactivate_plugin' ) );

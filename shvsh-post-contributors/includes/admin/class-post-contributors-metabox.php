@@ -51,7 +51,7 @@ if ( ! class_exists( 'Shvsh_Post_Contributors\Admin\Post_Contributors_Metabox' )
 			add_meta_box(
 				'shvsh_post_contributors_meta_box',
 				__( 'Contributors', 'shvsh-post-contributors' ),
-				array( $this, 'render_post_contributors_meta_box' ),
+				array( $this, 'render_post_contributors_meta_box' )
 			);
 		}
 
