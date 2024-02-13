@@ -9,7 +9,7 @@
  *
  * Plugin Name:       Post Contributors
  * Plugin URI:
- * Description:
+ * Description:       This WordPress plugin enables you to show multiple selected post contributors on single post page.
  * Version:           1.1.0
  * Requires at least: 5.2
  * Requires PHP:      7.2
