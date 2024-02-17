@@ -18,7 +18,7 @@
     background-color: white;
     display: inline-block;
     margin: 0;
-    padding: 2px 4px;
+    padding: 0 4px;
 }
 
 .shvsh-post-contributors-list-section .post-contributors-list-wrapper {
@@ -27,6 +27,7 @@
 
 .shvsh-post-contributors-list-section .post-contributors-list {
     margin: 2em 0;
+    width: 100%;
 }
 
 .shvsh-post-contributors-list-section .post-contributors-list-wrapper table, .shvsh-post-contributors-list-section .post-contributors-list-wrapper tr, .shvsh-post-contributors-list-section .post-contributors-list-wrapper td {
@@ -39,6 +40,7 @@
 
 .shvsh-post-contributors-list-section .post-contributor-details .gravatar-wrapper {
     text-align: right;
+    width: 50%;
 }
 
 .shvsh-post-contributors-list-section .post-contributor-details .gravatar-wrapper img {
@@ -51,4 +53,5 @@
 
 .shvsh-post-contributors-list-section .post-contributor-details .display-name-wrapper {
     vertical-align: middle;
+    width: 50%;
 }
