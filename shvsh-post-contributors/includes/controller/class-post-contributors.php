@@ -72,6 +72,8 @@ if ( ! class_exists( 'Shvsh_Post_Contributors\Controller\Post_Contributors' ) ) 
 
 			if ( empty( $post_contributors_ids ) ) {
 				$post_contributors_ids = array();
+			} else {
+				$post_contributors_ids = array_map( 'intval', $post_contributors_ids );
 			}
 
 			return $post_contributors_ids;
