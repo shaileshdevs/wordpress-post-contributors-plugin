@@ -14,7 +14,7 @@
 		<table class="post-contributors-list">
 			<?php
 			foreach ( $post_contributors_ids as $author_id ) :
-				$author_url = get_the_author_meta( 'user_url', $author_id );
+				$shvsh_author_url = get_the_author_meta( 'user_url', $author_id );
 				?>
 				<tr class="post-contributor-details">
 					<td class="gravatar-wrapper">
@@ -22,13 +22,13 @@
 					</td>
 					<td class="display-name-wrapper">
 						<?php
-						if ( empty( $author_url ) ) :
+						if ( empty( $shvsh_author_url ) ) :
 							?>
 							<span><?php echo esc_html( get_user_by( 'ID', $author_id )->display_name ); ?></span>
 							<?php
 						else :
 							?>
-							<a href="<?php echo esc_url( $author_url ); ?>"><?php echo esc_html( get_user_by( 'ID', $author_id )->display_name ); ?></a>
+							<a href="<?php echo esc_url( $shvsh_author_url ); ?>"><?php echo esc_html( get_user_by( 'ID', $author_id )->display_name ); ?></a>
 							<?php
 						endif;
 						?>

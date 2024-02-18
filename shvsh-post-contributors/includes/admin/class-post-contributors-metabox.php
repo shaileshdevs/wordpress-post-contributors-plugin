@@ -81,7 +81,7 @@ if ( ! class_exists( 'Shvsh_Post_Contributors\Admin\Post_Contributors_Metabox' )
 				<tbody>
 					<?php
 					foreach ( $authors as $author ) {
-						$checked = in_array( ( int ) $author->ID, $post_contributors_ids, true ) ? 'checked' : '';
+						$checked = in_array( (int) $author->ID, $post_contributors_ids, true ) ? 'checked' : '';
 						?>
 						<tr>
 							<td>
