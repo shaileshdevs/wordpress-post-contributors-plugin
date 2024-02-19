@@ -13,22 +13,22 @@
 	<div class="post-contributors-list-wrapper">
 		<table class="post-contributors-list">
 			<?php
-			foreach ( $post_contributors_ids as $author_id ) :
-				$shvsh_author_url = get_the_author_meta( 'user_url', $author_id );
+			foreach ( $post_contributors_ids as $shvsh_author_id ) :
+				$shvsh_author_url = get_the_author_meta( 'user_url', $shvsh_author_id );
 				?>
 				<tr class="post-contributor-details">
 					<td class="gravatar-wrapper">
-						<img src="<?php echo esc_url( get_avatar_url( $author_id ) ); ?>" />
+						<img src="<?php echo esc_url( get_avatar_url( $shvsh_author_id ) ); ?>" />
 					</td>
 					<td class="display-name-wrapper">
 						<?php
 						if ( empty( $shvsh_author_url ) ) :
 							?>
-							<span><?php echo esc_html( get_user_by( 'ID', $author_id )->display_name ); ?></span>
+							<span><?php echo esc_html( get_user_by( 'ID', $shvsh_author_id )->display_name ); ?></span>
 							<?php
 						else :
 							?>
-							<a href="<?php echo esc_url( $shvsh_author_url ); ?>"><?php echo esc_html( get_user_by( 'ID', $author_id )->display_name ); ?></a>
+							<a href="<?php echo esc_url( $shvsh_author_url ); ?>"><?php echo esc_html( get_user_by( 'ID', $shvsh_author_id )->display_name ); ?></a>
 							<?php
 						endif;
 						?>

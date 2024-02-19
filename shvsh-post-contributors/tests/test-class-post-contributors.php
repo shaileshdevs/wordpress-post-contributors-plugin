@@ -33,7 +33,7 @@ class Post_Contributors_Test extends WP_UnitTestCase {
 	 * @return void
 	 */
 	public function test_get_post_contributors() {
-		$post_contributors = Shvsh_Post_Contributors\Controller\Post_Contributors::get_instance();
+		$post_contributors = Post_Contributors::get_instance();
 
 		$post_contributors_ids = $post_contributors->get_post_contributors( 85 );
 		$this->assertEquals( $post_contributors_ids, array() );
