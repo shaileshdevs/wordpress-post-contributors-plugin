@@ -41,10 +41,14 @@ class Post_Contributors_Test extends WP_UnitTestCase {
 		add_post_meta(
 			85,
 			'shvsh_post_contributors',
-			array( 1, 2 )
+			array( '1', '2' )
 		);
 		$post_contributors_ids = $post_contributors->get_post_contributors( 85 );
 		$this->assertEquals( $post_contributors_ids, array( 1, 2 ) );
+
+		foreach ( $post_contributors_ids as $contributor_id ) {
+			$this->assertIsInt( $contributor_id );
+		}
 	}
 
 	/**
